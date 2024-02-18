@@ -1,0 +1,12 @@
+.body {
+    position: absolute;
+    width: 100%;
+}
+
+.h1 {
+    position: absolute;
+    right: 1%;
+    top: -4%;
+    font-family: system-ui;
+    color: #2196f326;
+}
