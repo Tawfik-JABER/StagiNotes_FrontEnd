@@ -109,7 +109,7 @@ function App() {
           <Route path="updateAbsence/:id" element={<UpdateAbsence />}/>
           {/* ------------------------------- Routes Of Affiche Notes ------------------------------- */}
           <Route path="noteStagiaireTutt" element={<NoteStagiaireTutt />}/>
-          {/* ------------------------------- Routes Of Affiche Notes ------------------------------- */}
+          {/* ------------------------------- Routes Of make Notes showing------------------------------- */}
           <Route path="profile" element={<TutteurProfile />}/>
         </Route>
 
