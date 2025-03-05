@@ -59,7 +59,7 @@ const PhotoProfileUpload = ({ open, onClose }) => {
     const getUserToken = () => {
         const tokenDir = localStorage.getItem("Token_dir");
         const tokenTutt = localStorage.getItem("Token_Tutt");
-        const tokenForm = localStorage.getItem("Token_form");
+        const tokenForm = localStorage.getItem("Token_Form");
         const tokenStag = localStorage.getItem("Token_Stag");
 
         if (tokenDir) return { token: tokenDir, type: "director" };
