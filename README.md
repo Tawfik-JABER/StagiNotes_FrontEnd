@@ -34,7 +34,27 @@ StagiNotes is built using modern web technologies:
 - **Backend:** Laravel framework with Sanctum authentication for secure user access.
 - **Design:** Figma was used to create the initial sketches and UI design.
 
+## StagiNotes ScreenShots
+### Login Form
+![login Form](./src/images/LoginForm.png)
 
+### Reset Password Input
+![reset input](./src/images/ResetPassword.png)
+
+### Home Page
+![home page](./src/images/homePage.gif)
+
+### Director Dashboard
+![director dashboard](./src/images/directorDashboard.png)
+
+### Tuteur Dashboard
+![tuteur dashboard](./src/images/tutteurDashboard.png)
+
+### Formateur Dashboard
+![formateur dashboard](./src/images/formateurDashboard.png)
+
+### Stagiaire Dashboard
+![stagiaire dashboard](./src/images/stagiaireDashboard.png)
 
 
 
