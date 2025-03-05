@@ -1,9 +1,38 @@
 # StagiNotes 
   This is my PFE(end of study project) project in of Ofppt(Office for Skills Training and the Promotion of Work) , which is about of a web application programmed for the students , the teachers and the administration .<br />
 StagiNotes is a exam's results management give these following features: <br />
-1- The interns   : They can see their exam results easily and quickly and privately.
-2- The directors : They can 
+StagiNotes includes four types of users, each with specific functionalities:
 
+### 1. Stagiaire (Trainee)
+- View personal exam results.
+
+### 2. Director
+- Manage trainers (show, add, update, delete trainers).
+- Manage tutors (show, add, update, delete tutors).
+- Manage fields of study (show, add, update, delete fields).
+- View trainees and their modules.
+
+### 3. Formateur (Trainer)
+- Fill in form data.
+- View trainees under their supervision.
+- Record and store exam results.
+- Retrieve and display notes for trainees.
+- View specific trainee exam results.
+
+### 4. Tuteur (Tutor)
+- View and manage trainees (show, add, update, delete trainees).
+- Manage modules (show, add, update, delete modules).
+- Manage trainer-field-module assignments (show, add, update assignments).
+- Assign trainees to modules.
+- Record trainee absences.
+- View exam results of assigned trainees.
+
+## Tech Stack
+StagiNotes is built using modern web technologies:
+
+- **Frontend:** React.js with Material-UI (MUI) and custom CSS for styling.
+- **Backend:** Laravel framework with Sanctum authentication for secure user access.
+- **Design:** Figma was used to create the initial sketches and UI design.
 
 
 
