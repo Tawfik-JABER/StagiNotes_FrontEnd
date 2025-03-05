@@ -1,7 +1,7 @@
 # StagiNotes 
   This is my PFE(end of study project) project in of Ofppt(Office for Skills Training and the Promotion of Work) , which is about of a web application programmed for the students , the teachers and the administration .<br />
 StagiNotes is a exam's results management give these following features: <br />
-StagiNotes includes four types of users, each with specific functionalities:
+It includes four types of users:
 
 ### 1. Stagiaire (Trainee)
 - View personal exam results.
@@ -57,7 +57,7 @@ StagiNotes is built using modern web technologies:
 ![stagiaire dashboard](./src/images/stagiaireDashboard.png)
 
 
-
+# The Back end part of this project in an other repository named 'StagiNotes_BackEnd'
 
 
 
