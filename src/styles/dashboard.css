@@ -13,26 +13,76 @@
 #root {
     width: 100%;
     height: 100vh;
-    display: flex;
 }
 /* --------------------------------------------------------------------------------------------- home director --------------------------------------------------------------------------------------------- */
 .side_bar {
-    width: 17%;
+    width: 250px;
     background-color: #F6F6F6;
     box-shadow: 2px -1px 6px -1px #0000003d;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99999;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.side_bar.show {
+    transform: translateX(0);
+}
+
+.side_bar.hide {
+    transform: translateX(-100%);
+}
+
+.menu_icon {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 60px;
+    font-size: 35px !important;
+    color: #001b4eb2;
+}
+
+.menu_icon:hover {
+    color: var(--cyan-color);
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0 0 0 / 42%);
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
 }
 
 .side_bar .image_ofppt {
-    margin-top: 12px;
+    width: 100%;
+    margin-top: 15px;
     margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.side_bar .image_ofppt .close_icon {
+    color: #001b4e9c;
+    cursor: pointer;
+}
+
+.side_bar .image_ofppt .close_icon:hover {
+    color: var(--cyan-color);
 }
 
 .side_bar .image_ofppt img {
-    width: 80px;
+    width: 50px;
 }
 
 .side_bar .section {
@@ -105,7 +155,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 25px;
+    margin-left: 10px;
     margin-right: 15px;
     margin-bottom: 0px !important;
     transition: .1s;
@@ -138,6 +188,9 @@
     -ms-transition: .1s;
     -o-transition: .1s;
 }
+.side_bar .section div a {
+    margin-right: 10px;
+}
 
 .side_bar .section div:hover .image img {
     width: 20px;
@@ -152,28 +205,30 @@ a {
 
 .side_bar .logout {
     display: flex;
+    letter-spacing: 1px;
     align-items: center;
     justify-content: center;
-    width: fit-content;
+    width: -moz-fit-content;
+    width: 100%;
     padding: 5px 5px;
-    color: #001b4e9c;
-    font-weight: bold;
+    color: #5e6779;
+    font-weight: 500;
     margin-top: -35px;
-    margin-bottom: 8px;
-    border-radius: 7px;
     cursor: pointer;
-    box-shadow: 0px 2px 1px 0px #00000085;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
-.side_bar .logout img {
-    width: 25px;
-    margin-right: 5px;
-    filter: invert(11%) sepia(50%) saturate(2894%) hue-rotate(205deg) brightness(93%) contrast(30%);
-    -webkit-filter: invert(11%) sepia(50%) saturate(2894%) hue-rotate(205deg) brightness(93%) contrast(30%);
+.side_bar .logout:hover {
+    color: var(--cyan-color);
 }
 
 .content {
-    width: 83%;
+    width: 90%;
+    margin-left: 10%;
 }
 
 .content .nav {
@@ -187,9 +242,28 @@ a {
     color: var(--blue-color);
 }
 
+.content .nav div:nth-child(2) {
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.content .nav button {
+    font-size: 12px;
+    letter-spacing: 1px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 8%;
+    right: 6%;
+    background-color: var(--bs-primary-text-emphasis);
+    color: white;    
+}
+
 .content .nav img {
     width: 35px;
-    margin-left: 35%;
+    height: 36px;
 }
 /* --------------------------------------------------------------------------------------------- home director --------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------- profile director --------------------------------------------------------------------------------------------- */

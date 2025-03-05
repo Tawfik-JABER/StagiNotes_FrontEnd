@@ -1,6 +1,6 @@
 import React from 'react'
 import image from '../../images/errorImage.jpg'
-import '../../styles/404Page.css' ;
+import '../../styles/404Page.css';
 import { useNavigate } from 'react-router-dom';
 import Link from '@mui/material/Link';
 
@@ -17,7 +17,7 @@ export default function Error() {
             <h2 className="error-message">
                 La page que vous recherchez n'existe pas !!
             </h2>
-            <Link onClick={goBack}> 
+            <Link onClick={goBack}>
                 Retournez à La Page Précédente
             </Link>
         </div>
