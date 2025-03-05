@@ -1,3 +1,18 @@
+# StagiNotes 
+  This is my PFE(end of study project) project in of Ofppt(Office for Skills Training and the Promotion of Work) , which is about of a web application programmed for the students , the teachers and the administration .<br />
+StagiNotes is a exam's results management give these following features: <br />
+1- The interns   : They can see their exam results easily and quickly and privately.
+2- The directors : They can 
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
